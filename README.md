@@ -1,6 +1,6 @@
 # Tutorial: Como Rodar e Acessar o Oracle DB no Kubernetes
 
-Este tutorial detalha como rodar o Oracle Database em um ambiente Kubernetes, incluindo como se conectar ao banco de dados, criar tabelas e realizar consultas.
+Este projeto, contém uma aplicação de banco de dados Oracle que opera em um ambiente Kubernetes utilizando Minikube. A aplicação permite a criação de tabelas e a realização de consultas SQL, oferecendo uma solução prática para gerenciar dados em um ambiente isolado e escalável. O acesso ao banco de dados é facilitado através do SQL*Plus, e a configuração de serviços permite o acesso externo, tornando-a ideal para desenvolvimento e testes.
 
 ## 1. Passos Iniciais
 - Certifique-se de que o cluster Kubernetes esteja rodando (por exemplo, usando Minikube).
