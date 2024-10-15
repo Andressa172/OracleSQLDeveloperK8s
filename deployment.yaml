@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oracle-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: oracle-db
+  template:
+    metadata:
+      labels:
+        app: oracle-db
+    spec:
+      containers:
+      - name: oracle-db
+        image: gvenzl/oracle-free:latest
+        ports:
+        - containerPort: 1521
+        - containerPort: 5500
+        env:
+        - name: ORACLE_PASSWORD
+          value: "aulaalex" 

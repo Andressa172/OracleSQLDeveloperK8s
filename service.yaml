@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: alex-oracle-db-service
+spec:
+  type: NodePort  
+  selector:
+    app: oracle-db
+  ports:
+    - name: oracle-port
+      protocol: TCP
+      port: 1521       
+      targetPort: 1521
+      nodePort: 30000 
+    - name: management-port
+      protocol: TCP
+      port: 5500      
+      targetPort: 5500  
+      nodePort: 30001  
